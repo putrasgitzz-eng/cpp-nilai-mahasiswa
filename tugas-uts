@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    
+    string nama;
+    float uts, uas, nilaiAkhir;
+
+    
+    cout << "==============================\n";
+    cout << "   PROGRAM HITUNG NILAI AKHIR \n";
+    cout << "==============================\n\n";
+
+    cout << "Masukkan nama mahasiswa : ";
+    getline(cin, nama);
+    cout << "Masukkan nilai UTS      : ";
+    cin >> uts;
+    cout << "Masukkan nilai UAS      : ";
+    cin >> uas;
+
+    
+    nilaiAkhir = (uts + uas) / 2;
+
+    
+    cout << "\n==============================\n";
+    cout << "          HASIL AKHIR         \n";
+    cout << "==============================\n";
+    cout << "Nama         : " << nama << endl;
+    cout << "Nilai Akhir  : " << nilaiAkhir << endl;
+
+    if (nilaiAkhir >= 60) {
+        cout << "Status       : LULUS 🎉" << endl;
+    } else {
+        cout << "Status       : TIDAK LULUS ❌" << endl;
+    }
+    cout << "==============================\n";
+
+    return 0;
+}
